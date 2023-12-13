@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding:0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+  background-color: #94e3fe;
+  position:sticky;
+  top:0px;
+  padding: 20px;
+}
+
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin:0px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 300px;
+}
+
+#navbar a, #welcome-section a {
+color: #b92d5d;
+}
+
+#welcome-section {
+  min-height:100vh;
+  background-color: #fefcdd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  /* background-image: url('image/***'); 
+  background-size: cover; background-position: center;*/
+}
+
+#welcome-section h1 {
+  color:#00a3d7;
+  
+}
+.welcomemessage {
+  max-width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  color:#006d8f;
+  font-size: 1.2rem;
+}
+
+#welcome-section h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+#projects h2 {
+  color:#fefcdd;
+  margin-top: 0px;
+}
+
+#projects {
+  background-color:#b92d5d;
+  padding: 30px;
+}
+
+#tiles {
+	display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  gap: 20px;
+  
+}
+
+.project-tile {
+  border: 8px solid #606060;
+  background-color: #606060;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* display: grid;
+	grid-auto-rows: 2fr 1fr; */
+}
+
+.project-tile img {
+  width: 100%;
+}
+
+.project-tile p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-tile a {
+  color:#94e3fe;
+}
+
+#contact h2, footer p {
+  text-align: center;
+  color:#831100;
+}
+
+#contact, footer {
+  background-color: #94e3fe;
+  padding: 30px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 800px;
+  flex-wrap:wrap;
+  margin: 0 auto;
+}
+
+.contact-links:hover {
+  transition: transform 0.3s ease-out;
+  transform: translateY(8px);
+}
+
+.contact-box a {
+text-decoration: none;
+  color:#fefcdd;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+
+@media (max-width: 550px) {
+  #welcome-section p, #projects h2, #contact h2 {
+    font-size: 1.2em;
+  }
+  #welcome-section h1 {
+    font-size: 1.8em;
+  }
+
+  .contact-box a {
+    font-size: 1em;
+  }
+  
+  #tiles {
+	  grid-template-columns: 1fr;
+  }
+
+  .project-tile img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+}
